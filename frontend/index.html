@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="stylesheet" href="./styles.css" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+  
+
+    <title>Chat</title>
+    
+  </head>
+
+
+
+  <body>
+
+    
+
+	  <script>
+	  function enviartx(){
+		  var texto = document.getElementById("txId").value;
+		  document.getElementById("mlId").innerHTML = "Operador :  " + texto;
+	 
+	  } 
+	  </script>
+	  
+	<header class="cabeca">Chat
+
+	  </header>  
+<div id="dv1" class="dv01">
+	  <div class="dmenu">
+	
+	<nav class="menu">
+		<ul>
+			<li><a href="#">Inicial</a></li>
+			<li><a href="#">Mensagens Arquivadas</a></li>
+			<li><a href="#">Historico de mensagens</a></li>
+			<li><a href="#">Relatório</a></li>
+			<li><a href="#">Configurações</a></li>
+			<li><a href="#">Suporte</a></li>
+			</ul>
+		</nav>
+	</div>
+	  
+	  
+	  </div>
+<div id="dv2" class="dv02">
+	<h3 align="center">Fila de espera</h3>  
+	<ul  align="left" class="listade">
+	  <li><a hef="#">@Usuário  103.192.0.3  Aguadando</a></li>
+	  <li><a hef="#">@Usuário  183.142.0.3  Aguadando</a></li>
+	  <li><a hef="#">@Usuário  123.152.4.3  Aguadando</a></li>
+	  <li><a hef="#">@Usuário  203.198.0.3  Desconectado</a></li>
+	  <li><a hef="#">@Usuário  203.192.0.2  Aguadando</a></li>
+	  <li><a hef="#">@Usuário  203.192.1.3  Aguadando</a></li>
+	  <li><a hef="#">@Usuário  103.292.0.3  Desconectado</a></li>
+	  <li><a hef="#">@Usuário  133.192.2.3  Aguadando</a></li>
+	</ul>
+	  
+	  
+	  </div>	
+<div id="dv3" class="dv03"></div>	  
+	  
+	  <div id="dvm">
+	  <h1 id="h1c">Chat</h1>
+    
+	  <div class="messages">
+      <ul id="mlId"  class="message-list">
+	</ul>
+
+
+
+      <div  id="msgi" class="message-input">
+
+        <input id="txId" type="text" class="tx">
+
+        <button onClick="enviartx();">Enviar</button>
+		  <button  accesskey="enter" onClick="finalizartx();">finalizar</button>
+		  </div>
+		  		  
+		  <div  class="mr" id="mr">
+			  <h3>Mensagens rapidas</h3>
+		  <select>
+ <option>Bom dia como posso ajudar?</option>
+ <option>Obrigado pela sua atenção</option>
+ <option>Vou verificar</option>
+ <option>Posso fazer mais alguma coisa?</option>
+</select>
+		  		  
+		<button onClick="();">enviar</button> 
+			  </div>
+		  
+		  <div id="trx">
+		  <h3>Setor</h3>
+<select>
+ <option>Financeiro</option>
+ <option>Comercial</option>
+ <option>Administrativo</option>
+ <option>Suporte</option>
+</select>
+<button onClick="();">Tranferir</button>
+			  
+			  <div>
+			  <h3> Salvar mensagem ?</h3>
+				  <button onClick="();">Salvar</button> 	
+			  </div>
+
+		  </div>
+		  </div>
+		  
+
+</div>
+  </body>
+
+</html>
